@@ -1,94 +1,61 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body
-{
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
 
-.mySlides {display:none;}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle.css">
+    <title>B.A.M</title>
+</head>
 
-<div class="w3-display-container mySlides">
-  <img src="gp.JPG" style="width:100%">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-    <strong><u>Happiness</u> is a state of mind or feeling characterized by contentment, love, satisfaction, pleasure or joy.</strong>
-  </div>
-</div>
+<body>
 
-<div class="w3-display-container mySlides">
-  <img src="happydog.jpg" style="width:100% ">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-      <strong><u>Happiness</u> is when your life fulfills your needs.</strong>
-  </div>
-</div>
+    <!--start of the nav bar-->
+        <nav>
+    
+            <div class="logo">
+                <img src="logo.png" alt="" href="main.html" style="padding: 4px; height:70px;">
+            </div>
+    
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                
+                <li>
+                    <a href="snacks.html">Snacks</a>
+                </li>
+    
+                <li>
+                    <a href="drinks.html">Drinks</a>
+                </li>
+    
+                <li>
+                    <a href="aboutus.html">About us</a>
+                </li>
+            </ul>
+            
+            <!--nav bar for mobile view starts here-->
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            <!--nav bar for mobile view ends here-->
+        
+        </nav>
+    <!--end of the nav bar-->
 
-<div class="w3-display-container mySlides">
-  <img src="businesswomen.JPG" style="width:100%">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-     <strong> <u>Happiness</u> is the goal that makes other life goals -</strong>
-  </div>
-</div>
+    <!--The body of the page starts here-->
 
-<div class="w3-display-container mySlides">
-  <img src="<div class="w3-display-container mySlides">
-  <img src="IMG_0191.JPG" style="width:100%">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-      <strong>like success, prosperity and relationships-feel meaningful and enjoyable.</strong>
-  </div>
-</div>
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-      <strong>like success, prosperity and relationships-feel meaningful and enjoyable.</strong>
-  </div>
-</div>
+    <div class="coffee">
+        <img src="Picture/makingcoffeedesktop.jpg" alt="" width="100%">
+    </div>
 
-<div class="w3-display-container mySlides">
-  <img src="IMG_0192.JPG" style="width:100%">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-  </div>
-</div>
+    
+    <!--The body of the page starts here-->
 
-<div class="w3-display-container mySlides">
-  <img src="end.jpg" style="width:100%">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-      
-  </div>
-</div>
-
-
-<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-</body>
-</html>
+    </body>
+    
+    </html>
